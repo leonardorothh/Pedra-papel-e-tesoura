@@ -19,28 +19,26 @@
             <div class="botoesIniciarJogo">
 
                 <button onclick="
-                    removerTitulo()
                     iniciarPartida('Pedra')
                     "><img src="img/Pedra-emoji.png" alt="Botão Pedra" class="emojiIcon">
                 </button>
 
                 <button onclick="
-                    removerTitulo()
                     iniciarPartida('Papel')
                     "><img src="img/Papel-emoji.png" alt="Botão Papel" class="emojiIcon">
                 </button>
 
                 <button onclick="
-                    removerTitulo()
                     iniciarPartida('Tesoura')
                     "><img src="img/Tesoura-emoji.png" alt="Botão Tesoura" class="emojiIcon">
                 </button>
 
             </div>
-
-                    <p class="js-result resultado"></p>
+            <div class="div">
+                    <p class="js-result resultado">Aguardando escolha</p>
                     <p class="js-moves resultado"></p>
                     <p class="js-score resultado score"></p>
+                </div>
 
                 <button onclick="
                     placar.vitorias = 0;
