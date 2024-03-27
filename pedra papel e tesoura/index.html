@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="img/Papel-emoji.png" type="image/x-icon">
+    <title>Pedra, papel e tesoura</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <p class="textoPrincipal">Boas-vindas ao jogo pedra, papel e tesoura.</p>
+        <p class="textoPrincipal">Por favor, escolha seu movimento:</p>
+
+            <div class="botoesIniciarJogo">
+
+                <button onclick="
+                    iniciarPartida('Pedra')
+                    "><img src="img/Pedra-emoji.png" alt="Botão Pedra" class="emojiIcon">
+                </button>
+
+                <button onclick="
+                    iniciarPartida('Papel')
+                    "><img src="img/Papel-emoji.png" alt="Botão Papel" class="emojiIcon">
+                </button>
+
+                <button onclick="
+                    iniciarPartida('Tesoura')
+                    "><img src="img/Tesoura-emoji.png" alt="Botão Tesoura" class="emojiIcon">
+                </button>
+
+            </div>
+
+                    <p class="js-result resultado"></p>
+                    <p class="js-moves resultado"></p>
+                    <p class="js-score resultado score"></p>
+
+                <button onclick="
+                    placar.vitorias = 0;
+                    placar.empates = 0;
+                    placar.derrotas = 0;
+                    localStorage.removeItem('placar');
+                    atualizarScore();" class="botaoResetarScore">
+                    Resetar Placar
+                </button>
+
+        <script>atualizarScore()</script>
+
+    </div>
+
+</body>
+</html>
