@@ -54,10 +54,12 @@ function iniciarPartida(movimentoDoJogador) {
 
     document.querySelector('.js-result').innerHTML = resultado;
 
-    document.querySelector('.js-moves').innerHTML = `Você escolheu:
-<img src="img/${movimentoDoJogador}-emoji.png" class="emojiIcon"> <br>
-O computador escolheu: <img src="img/${movimentoComputador}-emoji.png" class="emojiIcon">
-`;
+    document.querySelector('.js-moves').innerHTML = `<div class="resultadoTela"> <p class="textoResultadoTela">Você escolheu:</p>
+<img src="img/${movimentoDoJogador}-emoji.png" class="emojiIcon">
+<p class="textoResultadoTela">O computador escolheu:</p> <img src="img/${movimentoComputador}-emoji.png" class="emojiIcon">
+</div>
+`
+        
 }
 
 function atualizarScore() {
@@ -79,15 +81,6 @@ function escolhaDoComputador() {
         }
             return movimentoComputador;
 }
-
-function removerTitulo() {
-    document.querySelector('.textoPrincipal').innerHTML = "";
-    document.querySelector('.textoSecundario').innerHTML = "";
-}
-
-
-
-
 
 
 
