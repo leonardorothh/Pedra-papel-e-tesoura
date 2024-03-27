@@ -18,6 +18,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     gap: 8px;
+    width: 100%;
 }
 
 .textoPrincipal {
@@ -28,6 +29,7 @@ body {
 
 .resultado {
     font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .score {
@@ -66,4 +68,11 @@ body {
     border-radius: 80px;
     width: 100px;
     height: 100px;
+}
+
+.resultadoTela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
