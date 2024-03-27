@@ -80,6 +80,10 @@ function escolhaDoComputador() {
             return movimentoComputador;
 }
 
+function removerTitulo() {
+    document.querySelector('.textoPrincipal').innerHTML = "";
+    document.querySelector('.textoSecundario').innerHTML = "";
+}
 
 
 
